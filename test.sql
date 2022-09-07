@@ -50,4 +50,6 @@ SELECT `exam_id` AS `Sessione`, ROUND(AVG(`vote`),2) AS `Media voto` FROM `exam_
 
 -- 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 
-SELECT COUNT(*) FROM `degrees` GROUP BY `department_id`;
+SELECT COUNT(*)  FROM `degrees` GROUP BY `department_id`;
+
+
