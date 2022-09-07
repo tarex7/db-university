@@ -23,14 +23,14 @@ SELECT * FROM `exams` WHERE `hour` > '14:00:00' AND `date` = '2020-06-20';
 -- 6. Selezionare tutti i corsi di laurea magistrale (38)
 
 SELECT * FROM `degrees` WHERE `level` = 'magistrale';
-
+                                                          
 -- 7. Da quanti dipartimenti è composta l'università? (12)
 
 SELECT count(*) AS `Numero dipartimenti` FROM `departments`;
 
 -- 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
-SELECT * FROM `teachers` WHERE `phone` IS NOT null;
+SELECT count(*) FROM `teachers` WHERE `phone` IS NOT null;
 
 
 -- ------------------------------------------ QUERY CON GROUP BY
